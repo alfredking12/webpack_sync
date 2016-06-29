@@ -1,0 +1,17 @@
+{
+  "name": "webpack_sync",
+  "version": "0.0.1",
+  "description": "webpack sync",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "alfredking12",
+  "license": "ISC",
+  "dependencies": {
+    "ffi": "^2.0.0"
+  }
+}
