@@ -48,7 +48,7 @@ module.exports = function(options) {
     fs.writeFileSync(config_file, data);
     
     //执行webpack命令
-    var optimized = options.optimized ? ' -P' : '';
+    var optimized = options.optimized ? ' -p' : '';
     libc.system("webpack --config " + config_file + optimized);
     
     //通过检查文件输出判断是否成功执行
