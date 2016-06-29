@@ -1,10 +1,14 @@
 {
   "name": "webpack_sync",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "webpack sync",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfredking12/webpack_sync.git"
   },
   "keywords": [
     "webpack"

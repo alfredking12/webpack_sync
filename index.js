@@ -24,9 +24,6 @@ module.exports = function(options) {
         fs.unlinkSync(output_file);
     }
     
-    //按照webpack配置文件格式
-    var data = 'module.exports = ' + JSON.stringify(options) + ';';
-    
     //处理正则表达式输出到文本的问题 test:{{xxx}} value:/\.|jsx$/
     var loaders = [];
     if (options.module && options.module.loaders) {
@@ -39,6 +36,8 @@ module.exports = function(options) {
             delete item.value;
         }
     }
+    //按照webpack配置文件格式
+    var data = 'module.exports = ' + JSON.stringify(options) + ';';
     for (var i = 0;i<loaders.length; i++) {
         var item = loaders[i];
         var search = '\"' + item.test + '\"';
@@ -58,7 +57,7 @@ module.exports = function(options) {
     //TODO：通过文件内容开头，判断执行情况
     
     if (ret) {
-        fs.unlink(config_file)
+        //fs.unlink(config_file)
     }
     return ret;
 }
