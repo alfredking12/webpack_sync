@@ -41,9 +41,10 @@ npm install webpack_sync
 ```
 
 Install Webpack Loaders and Plugins if need
-> Since use webpack CLI, you should install loaders and plugins global if you need, such as url-loader, jsx-loader and so on.   
+> You can also install loaders and plugins local if you need, such as url-loader, jsx-loader, css-loader, style-loader and so on.
+> When webpack CLI run, it will find module local and global.   
 ```
-npm install -g url-loader jsx-loader
+npm install --save-dev url-loader jsx-loader style-loader css-loader
 ```
 
 ### Options
