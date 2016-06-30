@@ -1,6 +1,6 @@
 {
   "name": "webpack_sync",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "webpack sync",
   "main": "index.js",
   "scripts": {
